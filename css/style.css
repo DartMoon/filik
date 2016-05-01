@@ -22,6 +22,14 @@ body {
 	font-family: 'Rl';
 }
 
+.wrapp {
+	margin: 0 8%;
+}
+
+.about-main {
+	padding: 0;
+}
+
 /*TOP-NAV*/
 .navbar {
 	position: absolute;
@@ -277,6 +285,7 @@ footer p {
 	line-height: 22px;
 	color: #8e8e8e;
 	padding: 0 0 20px;
+	text-align: justify;
 }
 
 
@@ -301,12 +310,17 @@ footer p {
 	padding: 0 0 25px;
 }
 
+.navbar:hover .dropdown-menu {
+	display: block !important;
+}
+
 section.our-story p {
 	font-family: 'RR';
 	font-size: 16px;
 	line-height: 22px;
 	color: #8e8e8e;
 	padding-bottom: 28px;
+	text-align: justify;
 }
 
 section.our-team p {
@@ -481,15 +495,14 @@ section.our-team .modal-content .social i {
 	margin: 46px 0 0;
 }
 
-.page-contackts i {
+.page-contackts img {
 	display: block;
-	text-align: center;
 	font-size: 30px;
-	margin: 0 0 34px;
+	margin: 0 auto 34px;
 }
 
 .page-contackts h2 {
-	font-family: 'RB';
+	font-family: 'RL';
 	font-size: 15px;
 	line-height: 20px;
 	color: #262626;
@@ -584,7 +597,7 @@ section.our-team .modal-content .social i {
 }
 
 .item-blog {
-	margin: 0 0 40px;
+	margin: 0 20px 40px;
 }
 
 .item-blog img {
@@ -606,10 +619,11 @@ section.our-team .modal-content .social i {
 
 .item-blog p {
 	font-size: 23px;
-	line-height: 32px;
+	line-height: 22px;
 	display: block;
 	color: #8e8e8e;
 	padding: 35px 0 20px ;
+	text-align: justify;
 }
 
 .item-blog a {
@@ -618,6 +632,7 @@ section.our-team .modal-content .social i {
 	text-align: center;
 	display: block;
 	text-decoration: underline;
+	padding: 10px 0;
 }
 
 .item-blog a:hover {
@@ -644,9 +659,28 @@ section.our-team .modal-content .social i {
 	color: #c0c0c0;
 }
 
+.side-bar input {
+	height: 45px;
+    padding-left: 15px;
+    max-width: 250px;
+    width: 100%;
+    border: 1px solid #c0c0c0;
+    line-height: 18px;
+}
+
 .side-bar-block {
 	margin-bottom: 40px;
 }
+
+.side-bar-block.side-bar h1 {
+	text-align: center;
+}
+
+.side-bar-block.side-bar .icon {
+	width: 254px;
+	margin: 0 auto;
+}
+
 
 .tags ul li {
 	border: 1px solid #c0c0c0;
@@ -675,14 +709,15 @@ section.our-team .modal-content .social i {
 
 .item-blog ul li {
     font-size: 23px;
-    line-height: 32px;
+    line-height: 22px;
     display: block;
     color: #8e8e8e;
-    padding: 0 0 20px 0;
+    padding: 0 0 15px 0;
+    text-align: justify;
 }
 
 .item-blog-com p {
-	padding: 25px 0 0;
+	padding: 20px 0 0;
 }
 
 .comments-blog h4 {
@@ -724,7 +759,7 @@ section.our-team .modal-content .social i {
 }
 
 .comments-blog button {
-	width: 135px;
+/*	width: 135px;
 	height: 45px;
 	border: 2px solid #3bb48b;
 	background: #3bb48b;
@@ -733,12 +768,22 @@ section.our-team .modal-content .social i {
 	text-transform: uppercase;
 	transition: all .5s;
 	margin: 25px 0 0;
+*/
+    width: 144px;
+    height: 44px;
+    border: 2px solid #242424;
+    font-family: 'RB';
+    font-size: 14px;
+    color: #242424;
+    background: transparent;
+    text-transform: uppercase;
+    margin-top: 45px;
 }
 
-.comments-blog button:hover {
+/*.comments-blog button:hover {
 	background-color: transparent;
 	color: #3bb48b;
-}
+}*/
 
 .portfolio-slider img {
 	height: 100vh;
@@ -785,7 +830,7 @@ section.our-team .modal-content .social i {
 	}
 	    .item-blog p {
     	font-size: 16px;
-    	padding: 25px 0 0;
+    	padding: 15px 0 0;
     }
 
     .item-blog a {
